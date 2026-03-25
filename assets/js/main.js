@@ -25,3 +25,20 @@ animate(chars2, {
     delay: stagger(80),
     loop: true,
 });
+
+const swiperProjects = new Swiper('.projects__swiper', {
+    loop: true,
+    spaceBetween: 24,
+    slidesPerView: 'auto',
+    grabCursor: true,
+    speed: 600,
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+});
