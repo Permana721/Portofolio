@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Portofolio</title>
 </head>
@@ -111,9 +111,9 @@
             </h2>
 
             <div class="projects__container container grid">
-                <div class="projects_swiper">
-                    <div>
-                        <article class="projects__card">
+                <div class="projects__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="projects__card swiper-slide">
                             <div class="blob"></div>
 
                             <div class="projects__number">
@@ -124,17 +124,85 @@
                             <div class="projects__data">
                                 <h1 class="projects__title">GYM <br> website</h1>
                                 <p class="projects__subtitle">Technologies used</p>
-                                <p class="projects__description">Laravel, Tailwind</p>
+                                <p class="projects__description">Laravel, Tailwind, Javascript, MySQL, Bootstrap</p>
                             </div>
 
                             <div class="projects__image">
-                                <img src="assets/img/" alt="image" class="projects__img">
                                 <a href="#" target="_blank" class="projects__button">
-                                    <i class="ri-arrow-right-up-long-line"></i>
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                                <img src="assets/img/projects/purGYM.png" alt="image" class="projects__img">
+                            </div>
+                        </article>
+
+                        <article class="projects__card swiper-slide">
+                            <div class="blob"></div>
+
+                            <div class="projects__number">
+                                <h1>02</h1>
+                                <h3>Web</h3>
+                            </div>
+
+                            <div class="projects__data">
+                                <h1 class="projects__title">Admin <br> website</h1>
+                                <p class="projects__subtitle">Technologies used</p>
+                                <p class="projects__description">Laravel, CSS3, Javascript, PostgreSQL, Data Tables(Server side rendering) </p>
+                            </div>
+
+                            <div class="projects__image">
+                                <img src="assets/img/projects/login.jpeg" alt="image" class="projects__img">
+                                <a href="#" target="_blank" class="projects__button">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="projects__card swiper-slide">
+                            <div class="blob"></div>
+
+                            <div class="projects__number">
+                                <h1>03</h1>
+                                <h3>Web</h3>
+                            </div>
+
+                            <div class="projects__data">
+                                <h1 class="projects__title">E-Commerce <br> website</h1>
+                                <p class="projects__subtitle">Technologies used</p>
+                                <p class="projects__description">Laravel, CSS3, Javascript, Data Tables(Client side rendering), MySQL</p>
+                            </div>
+
+                            <div class="projects__image">
+                                <img src="assets/img/projects/Footie.png" alt="image" class="projects__img">
+                                <a href="#" target="_blank" class="projects__button">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="projects__card swiper-slide">
+                            <div class="blob"></div>
+
+                            <div class="projects__number">
+                                <h1>04</h1>
+                                <h3>Web</h3>
+                            </div>
+
+                            <div class="projects__data">
+                                <h1 class="projects__title">Routing <br> website</h1>
+                                <p class="projects__subtitle">Technologies used</p>
+                                <p class="projects__description">Python, Tailwind, Javascript</p>
+                            </div>
+
+                            <div class="projects__image">
+                                <img src="assets/img/projects/Routing.png" alt="image" class="projects__img">
+                                <a href="#" target="_blank" class="projects__button">
+                                    <i class="ri-arrow-right-up-line"></i>
                                 </a>
                             </div>
                         </article>
                     </div>
+
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -145,6 +213,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
