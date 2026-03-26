@@ -255,8 +255,8 @@ img {
 }
 
 .home__image .blob-animate {
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
     bottom: 0;
     justify-self: center;
 }
@@ -307,16 +307,15 @@ img {
 	content: '';
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(0deg,
-				hsl(0, 0%, 0%) 10%,
-				hsla(0, 0%, 0%, 0) 60%);
 	position: absolute;
-	top: 0;
+	top: 0px;
 	left: 0;
 }
 
 .home__profession-2 {
 	transform: translateY(-1rem);
+	position: absolute;
+	top: 80px;
 }
 
 .home__social {
@@ -340,11 +339,11 @@ img {
 }
 
 .home__cv {
-	z-index: 2;
-	right: -2.5rem;
-	bottom: 2.5rem;
-	rotate: -90deg;
-	color: var(--text-color-light);
+    z-index: 2;
+    right: -1rem;    /* Digeser sedikit ke kiri agar tidak terpotong tepi layar */
+    bottom: 6rem;    /* Dinaikkan ke atas agar tidak menabrak teks Backend Engineer */
+    rotate: -90deg;
+    color: var(--text-color-light);
     font: var(--font-medium) var(--small-font-size) var(--second-font);
     display: flex;
     align-items: center;
@@ -891,6 +890,11 @@ img {
 		width: 350px;
 		justify-self: center;
 	}
+
+	.home__image .blob-animate {
+		width: 300px;
+		height: 300px;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -992,8 +996,8 @@ img {
 	}
 
     .home__info {
-		top: 12rem;
-		right: 1rem;
+		top: 13rem;
+		right: -7rem;
 		bottom: initial;
 	}
 
@@ -1024,6 +1028,7 @@ img {
 		font-size: var(--normal-font-size);
 		rotate: 0deg;
 		right: 0;
+		bottom: 2.5rem;
 	}
 
     .about__container {
