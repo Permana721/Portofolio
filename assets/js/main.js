@@ -1,30 +1,4 @@
-const { animate, text, stagger } = anime;
 
-const {chars: chars1} = text.split('.home__profession-1', {chars: true });
-const {chars: chars2} = text.split('.home__profession-2', {chars: true });
-
-
-animate(chars1, {
-    y: [
-        { to: ['100%', '0%'] },
-        { to: '-100%', delay: 4000, ease: 'in(3)' }
-    ],
-    duration: 900,
-    ease: 'out(3)',
-    delay: stagger(80),
-    loop: true,
-});
-
-animate(chars2, {
-    y: [
-        { to: ['100%', '0%'] },
-        { to: '-100%', delay: 4000, ease: 'in(3)' }
-    ],
-    duration: 900,
-    ease: 'out(3)',
-    delay: stagger(80),
-    loop: true,
-});
 
 const swiperProjects = new Swiper('.projects__swiper', {
     loop: true,
@@ -140,8 +114,7 @@ const sr = ScrollReveal({
 sr.reveal(`.home__image, .projects__container, .work__container,
 		.testimonials__container, .contact__container`)
 sr.reveal(`.home__data`, {delay: 900, origin: 'bottom'})
-sr.reveal(`.home__info`, {delay: 1200, origin: 'bottom'})
-sr.reveal(`.home__social, .home__cv`, {delay: 1500})
+sr.reveal(`.home__social`, {delay: 1500})
 sr.reveal(`.about__data`, {origin: 'left'})
 sr.reveal(`.about__image`, {origin: 'right'})
 sr.reveal(`.services__card`, {interval: 100})

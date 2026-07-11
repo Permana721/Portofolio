@@ -34,22 +34,38 @@
 
     <main class="main">
         <section class="home section">
-            <div class="home__shadow"></div>
             <div class="home__container container grid">
                 <div class="home__data">
                     <h3 class="home__greeting">Hello, I'm</h3>
-                    <h1 class="home__name">Permana <br> Surya D</h1>
+                    <h1 class="home__name">Permana <br> Surya Dharma</h1>
                 </div>
 
                 <div class="home__image">
-                    <div class="blob-animate"></div>
-                    <img src="./assets/img/asuka.png" alt="" class="home__perfil">
-                </div>
-
-                <div class="home__info">
-                    <h3 class="home__split"></h3>
-                    <h2 class="home__profession-1">Backend Engineer</h2>
-                    <h2 class="home__profession-2">& Web Developer</h2>
+                    <div class="developer-terminal">
+                        <div class="terminal__header">
+                            <div class="terminal__buttons">
+                                <span class="terminal__button red"></span>
+                                <span class="terminal__button yellow"></span>
+                                <span class="terminal__button green"></span>
+                            </div>
+                            <span class="terminal__title">permana@surya.dharma: ~/developer</span>
+                        </div>
+                        <div class="terminal__body">
+                            <pre class="terminal__code"><code><span class="keyword">const</span> <span class="variable">developer</span> = <span class="bracket">{</span>
+  <span class="property">name</span>: <span class="string">'Permana Surya Dharma'</span>,
+  <span class="property">role</span>: <span class="string">'Backend Engineer'</span>,
+  <span class="property">skills</span>: <span class="bracket">[</span>
+    <span class="string">'Go'</span>, <span class="string">'Laravel'</span>,
+    <span class="string">'Node.js'</span>, <span class="string">'Java'</span>,
+    <span class="string">'MySQL'</span>, <span class="string">'PostgreSQL'</span>
+  <span class="bracket">]</span>,
+  <span class="property">languages</span>: <span class="bracket">[</span>
+    <span class="string">'Indonesia'</span>, <span class="string">'English'</span>,
+    <span class="string">'Japanese'</span>
+  <span class="bracket">]</span>
+<span class="bracket">}</span>;<span class="terminal__cursor"></span></code></pre>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="home__social">
@@ -69,16 +85,10 @@
                         <i class="ri-facebook-box-fill"></i>
                     </a>
                 </div>
-
-                <a href="./assets/pdf/NaskahPAI.docx" download target="_blank" class="home__cv">
-                    RESUME <i class="ri-file-list-2-line"></i>
-                </a>
             </div>
         </section>
 
         <section class="about section" id="about">
-            <div class="about__shadow"></div>
-
             <div class="about__container container grid">
                 <div class="about__data">
                     <h2 class="section__title">
@@ -99,9 +109,30 @@
                 </div>
 
                 <div class="about__image">
-                    <div class="blob-animate"></div>
-                    <div class="blob-animate"></div>
-                    <img src="./assets/img/asuka.png" alt="image" class="about__perfil">
+                    <div class="developer-terminal">
+                        <div class="terminal__header">
+                            <div class="terminal__buttons">
+                                <span class="terminal__button red"></span>
+                                <span class="terminal__button yellow"></span>
+                                <span class="terminal__button green"></span>
+                            </div>
+                            <span class="terminal__title">api-response.json</span>
+                        </div>
+                        <div class="terminal__body">
+                            <pre class="terminal__code"><code><span class="keyword">HTTP/1.1</span> <span class="number">200 OK</span>
+<span class="property">Content-Type</span>: <span class="string">application/json</span>
+
+<span class="bracket">{</span>
+  <span class="property">"status"</span>: <span class="string">"success"</span>,
+  <span class="property">"data"</span>: <span class="bracket">{</span>
+    <span class="property">"database"</span>: <span class="string">"Connected"</span>,
+    <span class="property">"uptime"</span>: <span class="string">"99.99%"</span>,
+    <span class="property">"load"</span>: <span class="string">"Optimal"</span>,
+    <span class="property">"location"</span>: <span class="string">"Bandung, ID"</span>
+  <span class="bracket">}</span>
+<span class="bracket">}</span><span class="terminal__cursor"></span></code></pre>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
